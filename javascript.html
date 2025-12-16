@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">GET GOOD AT CODING!!!</a>
+            <ul class="menu">
+                <li><a href="index.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html" class="active">JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="title-section">
+            <h1>JAVASCRIPT CHEAT SHEET</h1>
+            <p>Essential JavaScript syntax and programming concepts</p>
+        </div>
+
+        <div class="search-section">
+            <input type="text" class="search-bar" id="searchBar" placeholder="Search for JavaScript concepts...">
+        </div>
+
+        <div class="card-container" id="cardContainer">
+            
+            <div class="card">
+                <div class="card-title">Variables</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>let</h3>
+                        <p>Variable that can change</p>
+                        <div class="code">let age = 25;
+age = 26; // can change</div>
+                    </div>
+                    <div class="item">
+                        <h3>const</h3>
+                        <p>Variable that cannot change</p>
+                        <div class="code">const name = 'John';
+// name = 'Jane'; // this will error</div>
+                    </div>
+                    <div class="item">
+                        <h3>var</h3>
+                        <p>Old way to declare variables</p>
+                        <div class="code">var count = 10;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Data Types</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>String</h3>
+                        <p>Text data</p>
+                        <div class="code">let text = 'Hello';
+let name = "World";
+let message = `Hi ${name}`;</div>
+                    </div>
+                    <div class="item">
+                        <h3>Number</h3>
+                        <p>Numbers and decimals</p>
+                        <div class="code">let age = 25;
+let price = 19.99;</div>
+                    </div>
+                    <div class="item">
+                        <h3>Boolean</h3>
+                        <p>True or false</p>
+                        <div class="code">let isActive = true;
+let isComplete = false;</div>
+                    </div>
+                    <div class="item">
+                        <h3>Array</h3>
+                        <p>List of items</p>
+                        <div class="code">let fruits = ['apple', 'banana'];
+fruits[0]; // 'apple'
+fruits.length; // 2</div>
+                    </div>
+                    <div class="item">
+                        <h3>Object</h3>
+                        <p>Store related data together</p>
+                        <div class="code">let person = {
+  name: 'John',
+  age: 30
+};
+person.name; // 'John'</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Functions</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>Function Declaration</h3>
+                        <p>Regular function</p>
+                        <div class="code">function greet(name) {
+  return `Hello ${name}`;
+}
+greet('John');</div>
+                    </div>
+                    <div class="item">
+                        <h3>Arrow Function</h3>
+                        <p>Shorter way to write functions</p>
+                        <div class="code">const add = (a, b) => a + b;
+const square = x => x * x;</div>
+                    </div>
+                    <div class="item">
+                        <h3>Function Expression</h3>
+                        <p>Function in a variable</p>
+                        <div class="code">const multiply = function(a, b) {
+  return a * b;
+};</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">DOM Manipulation</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>querySelector</h3>
+                        <p>Select first matching element</p>
+                        <div class="code">const element = document.querySelector('.myClass');
+const id = document.querySelector('#myId');</div>
+                    </div>
+                    <div class="item">
+                        <h3>querySelectorAll</h3>
+                        <p>Select all matching elements</p>
+                        <div class="code">const elements = 
+  document.querySelectorAll('div');</div>
+                    </div>
+                    <div class="item">
+                        <h3>addEventListener</h3>
+                        <p>Listen for events</p>
+                        <div class="code">button.addEventListener('click', () => {
+  console.log('Clicked!');
+});</div>
+                    </div>
+                    <div class="item">
+                        <h3>innerHTML and textContent</h3>
+                        <p>Change element content</p>
+                        <div class="code">element.innerHTML = '<p>HTML</p>';
+element.textContent = 'Text only';</div>
+                    </div>
+                    <div class="item">
+                        <h3>classList</h3>
+                        <p>Add or remove classes</p>
+                        <div class="code">element.classList.add('active');
+element.classList.remove('hidden');
+element.classList.toggle('show');</div>
+                    </div>
+                    <div class="item">
+                        <h3>createElement</h3>
+                        <p>Create new element</p>
+                        <div class="code">const div = document.createElement('div');
+div.textContent = 'New element';</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Conditionals</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>if else</h3>
+                        <p>Check conditions</p>
+                        <div class="code">if (age >= 18) {
+  console.log('Adult');
+} else {
+  console.log('Minor');
+}</div>
+                    </div>
+                    <div class="item">
+                        <h3>Ternary Operator</h3>
+                        <p>Shorthand for simple if/else</p>
+                        <div class="code">const status = age >= 18 ? 'Adult' : 'Minor';</div>
+                    </div>
+                    <div class="item">
+                        <h3>switch</h3>
+                        <p>Check multiple values</p>
+                        <div class="code">switch(day) {
+  case 'Mon':
+    console.log('Start');
+    break;
+  default:
+    console.log('Other');
+}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Loops</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>for loop</h3>
+                        <p>Loop a set number of times</p>
+                        <div class="code">for (let i = 0; i < 5; i++) {
+  console.log(i);
+}</div>
+                    </div>
+                    <div class="item">
+                        <h3>while loop</h3>
+                        <p>Loop while a condition is true</p>
+                        <div class="code">let i = 0;
+while (i < 5) {
+  console.log(i++);
+}</div>
+                    </div>
+                    <div class="item">
+                        <h3>for...of</h3>
+                        <p>Loop over iterable objects (arrays)</p>
+                        <div class="code">for (const fruit of fruits) {
+  console.log(fruit);
+}</div>
+                    </div>
+                    <div class="item">
+                        <h3>forEach</h3>
+                        <p>Array method for iterating</p>
+                        <div class="code">fruits.forEach(fruit => {
+  console.log(fruit);
+});</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>Web Development Cheat Sheets - Created for School Project 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

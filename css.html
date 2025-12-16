@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">GET GOOD AT CODING!!!</a>
+            <ul class="menu">
+                <li><a href="index.html">HTML</a></li>
+                <li><a href="css.html" class="active">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="title-section">
+            <h1>CSS CHEAT SHEET</h1>
+            <p>Comprehensive guide to CSS properties and styling</p>
+        </div>
+
+        <div class="search-section">
+            <input type="text" class="search-bar" id="searchBar" placeholder="Search for CSS properties...">
+        </div>
+
+        <div class="card-container" id="cardContainer">
+            
+            <div class="card">
+                <div class="card-title">Selectors</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>Element Selector</h3>
+                        <p>Select all elements of a type</p>
+                        <div class="code">p { color: blue; }</div>
+                    </div>
+                    <div class="item">
+                        <h3>Class Selector</h3>
+                        <p>Select by class name</p>
+                        <div class="code">.myClass { font-size: 16px; }</div>
+                    </div>
+                    <div class="item">
+                        <h3>ID Selector</h3>
+                        <p>Select by unique ID</p>
+                        <div class="code">#myId { background: red; }</div>
+                    </div>
+                    <div class="item">
+                        <h3>Universal Selector</h3>
+                        <p>Select everything</p>
+                        <div class="code">* { margin: 0; padding: 0; }</div>
+                    </div>
+                    <div class="item">
+                        <h3>Descendant Selector</h3>
+                        <p>Select nested elements</p>
+                        <div class="code">div p { color: green; }</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Box Model</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>margin</h3>
+                        <p>Space outside the element</p>
+                        <div class="code">margin: 10px;
+margin: 10px 20px;
+margin-top: 5px;</div>
+                    </div>
+                    <div class="item">
+                        <h3>padding</h3>
+                        <p>Space inside the element</p>
+                        <div class="code">padding: 15px;
+padding: 10px 20px;</div>
+                    </div>
+                    <div class="item">
+                        <h3>border</h3>
+                        <p>Border around element</p>
+                        <div class="code">border: 2px solid black;
+border-radius: 5px;</div>
+                    </div>
+                    <div class="item">
+                        <h3>width and height</h3>
+                        <p>Size of the element</p>
+                        <div class="code">width: 300px;
+height: 200px;
+max-width: 100%;</div>
+                    </div>
+                    <div class="item">
+                        <h3>box-sizing</h3>
+                        <p>How size is calculated</p>
+                        <div class="code">box-sizing: border-box;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Typography</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>font-family</h3>
+                        <p>Set the font type</p>
+                        <div class="code">font-family: Arial, sans-serif;</div>
+                    </div>
+                    <div class="item">
+                        <h3>font-size</h3>
+                        <p>Size of text</p>
+                        <div class="code">font-size: 16px;
+font-size: 1.2rem;</div>
+                    </div>
+                    <div class="item">
+                        <h3>font-weight</h3>
+                        <p>How thick the text is</p>
+                        <div class="code">font-weight: bold;
+font-weight: 600;</div>
+                    </div>
+                    <div class="item">
+                        <h3>text-align</h3>
+                        <p>Align text horizontally</p>
+                        <div class="code">text-align: center;
+text-align: justify;</div>
+                    </div>
+                    <div class="item">
+                        <h3>line-height</h3>
+                        <p>Space between lines</p>
+                        <div class="code">line-height: 1.6;</div>
+                    </div>
+                    <div class="item">
+                        <h3>text-decoration</h3>
+                        <p>Underline, strikethrough, etc</p>
+                        <div class="code">text-decoration: underline;
+text-decoration: none;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Colors and Backgrounds</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>color</h3>
+                        <p>Text color</p>
+                        <div class="code">color: #333;
+color: rgb(255, 0, 0);
+color: rgba(0, 0, 0, 0.5);</div>
+                    </div>
+                    <div class="item">
+                        <h3>background-color</h3>
+                        <p>Background color</p>
+                        <div class="code">background-color: #f0f0f0;
+background-color: transparent;</div>
+                    </div>
+                    <div class="item">
+                        <h3>background-image</h3>
+                        <p>Set background image</p>
+                        <div class="code">background-image: url('image.jpg');
+background-size: cover;
+background-position: center;</div>
+                    </div>
+                    <div class="item">
+                        <h3>opacity</h3>
+                        <p>Make element transparent</p>
+                        <div class="code">opacity: 0.5;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Flexbox</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>display flex</h3>
+                        <p>Turn on flexbox</p>
+                        <div class="code">display: flex;</div>
+                    </div>
+                    <div class="item">
+                        <h3>justify-content</h3>
+                        <p>Align items horizontally</p>
+                        <div class="code">justify-content: center;
+justify-content: space-between;
+justify-content: flex-start;</div>
+                    </div>
+                    <div class="item">
+                        <h3>align-items</h3>
+                        <p>Align items vertically</p>
+                        <div class="code">align-items: center;
+align-items: flex-start;</div>
+                    </div>
+                    <div class="item">
+                        <h3>flex-direction</h3>
+                        <p>Direction of flex items</p>
+                        <div class="code">flex-direction: row;
+flex-direction: column;</div>
+                    </div>
+                    <div class="item">
+                        <h3>flex-wrap</h3>
+                        <p>Allow items to wrap</p>
+                        <div class="code">flex-wrap: wrap;
+flex-wrap: nowrap;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">CSS Grid</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>display grid</h3>
+                        <p>Turn on grid layout</p>
+                        <div class="code">display: grid;</div>
+                    </div>
+                    <div class="item">
+                        <h3>grid-template-columns</h3>
+                        <p>Set up columns</p>
+                        <div class="code">grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: repeat(3, 1fr);</div>
+                    </div>
+                    <div class="item">
+                        <h3>gap</h3>
+                        <p>Space between grid items</p>
+                        <div class="code">gap: 20px;
+column-gap: 10px;
+row-gap: 15px;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Positioning</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>position</h3>
+                        <p>Position type of element</p>
+                        <div class="code">position: relative;
+position: absolute;
+position: fixed;
+position: sticky;</div>
+                    </div>
+                    <div class="item">
+                        <h3>top right bottom left</h3>
+                        <p>Position offset</p>
+                        <div class="code">top: 10px;
+left: 20px;</div>
+                    </div>
+                    <div class="item">
+                        <h3>z-index</h3>
+                        <p>Stacking order</p>
+                        <div class="code">z-index: 100;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Transitions and Animations</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>transition</h3>
+                        <p>Smooth property changes</p>
+                        <div class="code">transition: all 0.3s ease;
+transition: background-color 0.5s;</div>
+                    </div>
+                    <div class="item">
+                        <h3>transform</h3>
+                        <p>Move, rotate, scale elements</p>
+                        <div class="code">transform: scale(1.1);
+transform: rotate(45deg);
+transform: translateY(-5px);</div>
+                    </div>
+                    <div class="item">
+                        <h3>hover</h3>
+                        <p>Style when hovering</p>
+                        <div class="code">button:hover {
+  background-color: blue;
+}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Responsive Design</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>Media Queries</h3>
+                        <p>Different styles for screen sizes</p>
+                        <div class="code">@media (max-width: 768px) {
+  .container { width: 100%; }
+}</div>
+                    </div>
+                    <div class="item">
+                        <h3>Viewport Units</h3>
+                        <p>Size relative to screen</p>
+                        <div class="code">width: 100vw;
+height: 100vh;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Web Development Cheat Sheets - Created for School Project 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

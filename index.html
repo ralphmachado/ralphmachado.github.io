@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">GET GOOD AT CODING!!!</a>
+            <ul class="menu">
+                <li><a href="index.html" class="active">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="title-section">
+            <h1>HTML CHEAT SHEET</h1>
+            <p>Quick reference guide for HTML elements and attributes</p>
+        </div>
+
+        <div class="search-section">
+            <input type="text" class="search-bar" id="searchBar" placeholder="Search for HTML elements...">
+        </div>
+
+        <div class="card-container" id="cardContainer">
+            
+            <div class="card">
+                <div class="card-title">Basic Structure</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>DOCTYPE</h3>
+                        <p>Tells browser this is HTML5</p>
+                        <div class="code">&lt;!DOCTYPE html&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>html</h3>
+                        <p>Root element that wraps everything</p>
+                        <div class="code">&lt;html lang=&quot;en&quot;&gt;&lt;/html&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>head</h3>
+                        <p>Contains metadata and page info</p>
+                        <div class="code">&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>body</h3>
+                        <p>Contains all visible content</p>
+                        <div class="code">&lt;body&gt;
+  &lt;!-- your content here --&gt;
+&lt;/body&gt;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Text Elements</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>h1 to h6</h3>
+                        <p>Headings from biggest to smallest</p>
+                        <div class="code">&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>p</h3>
+                        <p>Paragraph for blocks of text</p>
+                        <div class="code">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>strong and b</h3>
+                        <p>Make text bold</p>
+                        <div class="code">&lt;strong&gt;Important&lt;/strong&gt;
+&lt;b&gt;Bold text&lt;/b&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>em and i</h3>
+                        <p>Make text italic</p>
+                        <div class="code">&lt;em&gt;Emphasized&lt;/em&gt;
+&lt;i&gt;Italic text&lt;/i&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>br</h3>
+                        <p>Line break tag</p>
+                        <div class="code">First line&lt;br&gt;Second line</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Lists</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>ul</h3>
+                        <p>Unordered list with bullet points</p>
+                        <div class="code">&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>ol</h3>
+                        <p>Ordered list with numbers</p>
+                        <div class="code">&lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>li</h3>
+                        <p>List item tag</p>
+                        <div class="code">&lt;li&gt;List item&lt;/li&gt;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Links and Images</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>a</h3>
+                        <p>Link to other pages</p>
+                        <div class="code">&lt;a href=&quot;https://example.com&quot;&gt;Link Text&lt;/a&gt;
+&lt;a href=&quot;#section&quot;&gt;Internal Link&lt;/a&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>img</h3>
+                        <p>Display images</p>
+                        <div class="code">&lt;img src=&quot;image.jpg&quot; alt=&quot;Description&quot;&gt;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Forms</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>form</h3>
+                        <p>Container for input fields</p>
+                        <div class="code">&lt;form action=&quot;/submit&quot; method=&quot;post&quot;&gt;
+&lt;/form&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>input</h3>
+                        <p>Different types of input fields</p>
+                        <div class="code">&lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;
+&lt;input type=&quot;email&quot; name=&quot;email&quot;&gt;
+&lt;input type=&quot;password&quot; name=&quot;pass&quot;&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>button</h3>
+                        <p>Clickable button</p>
+                        <div class="code">&lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>label</h3>
+                        <p>Label for inputs</p>
+                        <div class="code">&lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+&lt;input id=&quot;name&quot; type=&quot;text&quot;&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>textarea</h3>
+                        <p>Multi-line text input</p>
+                        <div class="code">&lt;textarea rows=&quot;4&quot; cols=&quot;50&quot;&gt;&lt;/textarea&gt;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Semantic Elements</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>header</h3>
+                        <p>Top section of page</p>
+                        <div class="code">&lt;header&gt;
+  &lt;h1&gt;Site Title&lt;/h1&gt;
+&lt;/header&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>nav</h3>
+                        <p>Navigation menu container</p>
+                        <div class="code">&lt;nav&gt;
+  &lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
+&lt;/nav&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>main</h3>
+                        <p>Main content area</p>
+                        <div class="code">&lt;main&gt;
+  &lt;/main&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>footer</h3>
+                        <p>Bottom section of page</p>
+                        <div class="code">&lt;footer&gt;
+  &lt;p&gt;Copyright 2024&lt;/p&gt;
+&lt;/footer&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>article</h3>
+                        <p>Self-contained content</p>
+                        <div class="code">&lt;article&gt;
+  &lt;h2&gt;Article Title&lt;/h2&gt;
+&lt;/article&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>section</h3>
+                        <p>Group related content</p>
+                        <div class="code">&lt;section&gt;
+  &lt;h2&gt;Section Title&lt;/h2&gt;
+&lt;/section&gt;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Tables</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>table</h3>
+                        <p>Create a table</p>
+                        <div class="code">&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Cell&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>tr</h3>
+                        <p>Table row</p>
+                        <div class="code">&lt;tr&gt;
+  &lt;td&gt;Data&lt;/td&gt;
+&lt;/tr&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>th</h3>
+                        <p>Table header cell</p>
+                        <div class="code">&lt;th&gt;Header&lt;/th&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>td</h3>
+                        <p>Table data cell</p>
+                        <div class="code">&lt;td&gt;Data&lt;/td&gt;</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Media Elements</div>
+                <div class="card-content">
+                    <div class="item">
+                        <h3>video</h3>
+                        <p>Embed video files</p>
+                        <div class="code">&lt;video controls&gt;
+  &lt;source src=&quot;video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;/video&gt;</div>
+                    </div>
+                    <div class="item">
+                        <h3>audio</h3>
+                        <p>Embed audio files</p>
+                        <div class="code">&lt;audio controls&gt;
+  &lt;source src=&quot;audio.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Web Development Cheat Sheets - Created for School Project 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
